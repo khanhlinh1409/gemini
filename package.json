@@ -1,8 +1,13 @@
 {
+  "homepage": "http://khanhlinh1409.github.io/gemini",
   "name": "gemini",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,8 +17,13 @@
   "dependencies": {
     "@google/generative-ai": "^0.23.0",
     "@types/node": "^22.13.9",
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
